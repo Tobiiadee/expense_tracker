@@ -5,10 +5,11 @@ import "./ExpenseItem.css";
 
 const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title); 
+  console.log('expense Item re-evaluated');
 
   const clickHandler = () => {
     setTitle("updated");
-    console.log(title);
+    
   };
 
   return (
